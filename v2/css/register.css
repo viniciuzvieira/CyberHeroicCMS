@@ -1,0 +1,433 @@
+#mainContainer {
+    background: #0d1d27;
+    width: 697px;
+    height: 32.5%;
+    position: relative;
+    top: 7%;
+    left: 3%
+}
+#containerTop {
+    height: 19%;
+    padding: 1%;
+}
+#containerBottom {
+    padding: 2%;
+    margin: 0.3% 0.5% 0% 0.5%;
+    height: 72%;
+}
+.stepText {
+    font-size: 11px;
+    font-weight: bold;
+    position: relative;
+    top: 66%;
+    left: 10%;
+}
+#contentTop{
+	font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    top: 18.3%;
+    width: 34%;
+    height: 29px;
+    left: 60%;
+    line-height: 29px;
+    text-align: center;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.divider {
+    background: #273d49;
+    height: 1px;
+    width: 90%;
+    margin-left: auto;
+    position: relative;
+    top: 77%;
+    margin-right: auto;
+}
+#containerBottomLeft {
+    width: 76%;
+    height: 94%;
+    display: inline-block;
+    vertical-align: top;
+}
+#containerBottomRight {
+    width: 23%;
+    height: 94%;
+    display: inline-block;
+    vertical-align: top;
+}
+#containerContent {
+    background: #0e1820;
+    width: 100%;
+    height: 93%;
+    padding: 5px;
+}
+@font-face {
+    font-family: UbuntuCond;
+    src: url(../font/Ubuntu.ttf);
+}
+.youToolTip {
+    background: url(../images/youtooltip.png);
+    width: 48px;
+    height: 39px;
+    position:absolute;
+    top: 24%;
+    left: 82.2%;
+    display: inline-block;
+    line-height: 31px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 18px;
+	color: #9cc7de;
+    font-smooth: never !important;
+    font-weight: lighter;
+    font-stretch: light;
+    -webkit-font-smoothing: none !important;
+}
+.youToolTipLarge{
+	width:auto !important;
+}
+.backBtn {  
+    background: url(../images/backbutton.png);
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 77%;
+    left: 79%;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 26px;
+    text-align: center;
+}
+.continueBtn {
+    background: url(../images/continuebutton.png);
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 72%;
+    left: 79%;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 26px;
+    text-align: center;
+}
+#figurePreview {
+    display: inline-block;
+    position: absolute;
+    width: 128px;
+    height: 220px;
+    background: url(https://www.habbo.com/habbo-imaging/avatarimage?figure=wa-3263-62-1408.hr-831-1395.ca-1816-62.cc-3087-62.sh-3252-92-1408.hd-180-8.lg-3202-92-1408.fa-1209-62.ch-210-92&head_direction=3&direction=3&size=l);
+    top: -16%;
+    left: -1%;
+}
+#figurePreviewContainer{
+    display: inline-block;
+    position: relative;
+    width: 128px;
+    height: 220px;
+    top: -11%;
+    left: 5%;
+}
+.formItem {
+    width: 100%;
+    position: relative;
+    left: 3%;
+    top: 6.2px;
+    display: block;
+}
+.formItemTitle {
+    display: inline-block;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-smooth: never !important;
+    font-weight: lighter;
+    font-stretch: light;
+    color: #9cc7de;
+}
+.formItemDesc {
+    font-family: Ubuntu;
+    font-size: 11px;
+    font-smooth: never !important;
+    font-weight: bold;
+    font-stretch: light;
+    margin-bottom: 3px;
+    color: #848586;
+}
+.formItemInput > input[type=text],.formItemInput > input[type=password],.formItemInput > input[type=email]{
+    margin-top: 2px;
+    width: 182px;
+    padding: 9px;
+	border:none;
+    border-radius: 3px;
+}
+.formItemInput > input[type=text]:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+#genderContainer {
+    width: 134px;
+    height: 48px;
+    background: #101011;
+    position: relative;
+    float: right;
+    border-radius: 3px;
+    left: -0.2%;
+    top: 25%;
+    z-index: 99999;
+}
+.genderDivider {
+    width: 2px;
+    height: 37px;
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    background: url(../images/genderdivider.png);
+    cursor: pointer !important;
+}
+.genderMale {
+    background: url(../images/maleicon.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    display: inline-block;
+    cursor: pointer !important;
+}
+.genderFemale {
+    background: url(../images/femaleicon.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 21%;
+    left: 64%;
+    display: inline-block;
+    cursor: pointer !important;
+}
+.genderChosen{
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(66,143,234,1);
+	-moz-box-shadow: 0px 0px 8px 1px rgba(66,143,234,1);
+	box-shadow: 0px 0px 8px 1px rgba(66,143,234,1);
+	border-radius:5000px;
+}
+.cmale{
+	background: url(../images/maleiconh.png);
+	opacity:0.6;
+}
+.cfemale{
+	background: url(../images/femaleiconh.png);
+	opacity:0.6;
+} 
+
+.tooltipExample {
+    display: none;
+    position: absolute;
+    top: 64.5%;
+    left: 42%;
+    width: 183px;
+    line-height: 27px;
+    text-align: center;
+    height: 27px;
+	background-color:red;
+    background: url(../images/tooltipexample.png);
+}
+.tooltipExample {
+    display: none;
+    position: absolute;
+    top: 64.5%;
+    left: 42%;
+    width: 230px;
+    line-height: 34px;
+    text-align: center;
+    height: 34px;
+    background-image: url(../images/tooltipexample.png);
+	background-repeat:no-repeat;
+}
+.tooltipError {
+    background-image: url(../images/tooltiperrorr.png);
+}
+.tooltipSuccess {
+    background-image: url(../images/tooltipsuccesss.png);
+}
+#step1 {}
+#passStrength{
+}
+#passStrength li{
+	height: 10px !important;
+    width: 10px !important;
+    float: left !important;
+    position: relative !important;
+    left: 14% !important;
+    margin-top: 5% !important;
+    margin-right: 2% !important;
+    background: white !important;
+    border-radius: 50000px !important;
+}
+#formError{
+	position: relative;
+    left: 5%;
+    top: 1%;
+    background: #da5a4c;
+    width: 68%;
+    padding: 5px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 3px;
+}
+#errorify{
+  -webkit-transition: background-color 1s linear !important;
+   transition: background-color 1s linear !important;
+   background: red !important;
+}
+#classBtnContainer{
+	width: 79%;
+    height: 70px;
+    position: absolute;
+    top: 36%;
+    left: 6.1%;
+	margin-top: 2%;
+}
+.classBtn{
+	background:#0f0e0e;
+	width: 141px;
+	height:36px;
+	border-radius: 3px;
+	display:inline-block;
+	margin-right:2.35%;
+	text-align:center;
+	line-height:36px;
+	color:#9cc7de;
+	cursor:pointer;
+}
+.figureItemContainer{
+	width:95px;
+	height:274px;
+	margin-left:20px;
+	display:inline-block;
+	background: url('../images/figure-back.png');
+	cursor:pointer;
+}
+.figureItemContainerChosen{
+	background: url('../images/figure-back-chosen.png');
+}
+.figureImg{
+	width:64px;
+	height:110px;
+	position:relative;
+	top: 23%;
+    left: 16%;
+}
+#figureContainer{
+	width: 69%;
+    height: 43%;
+    /* background: black; */
+    position: absolute;
+    left: 4%;
+	display:none;
+}
+.classClicked{
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(66,143,234,1);
+	-moz-box-shadow: 0px 0px 8px 1px rgba(66,143,234,1);
+	box-shadow: 0px 0px 8px 1px rgba(66,143,234,1);
+}
+#welcomeMsg{
+	display:none;
+    position: absolute;
+    width: 79%;
+    height: auto;
+    background: rgba(0,0,0,0.4);
+    left: 9%;
+    border-radius: 3px;
+    padding: 15px;
+    top: 20%;
+}
+#welcomeText{
+	display:none;
+}
+.optionClicked{
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(66,143,234,1);
+	-moz-box-shadow: 0px 0px 8px 1px rgba(66,143,234,1);
+	box-shadow: 0px 0px 8px 1px rgba(66,143,234,1);
+}
+#classBody
+{
+	width: 60%;
+    height: 26%;
+    background: rgb(15, 28, 37);
+    position: absolute;
+    padding: 24px;
+    top: 48%;
+    font-size: 12px;
+    left: 5%;
+    color: #848586;
+    font-weight: normal !Important;
+}
+#classText
+{
+	display:none;
+}
+#divider{
+	width: 457px;
+    height: 1px;
+    display: inline-block;
+    background: url(../images/divider.png);
+    position: relative;
+    top: 39%;
+    left: 6%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+	margin-left: -16px;
+}
+.spawnOption{
+	width:197px;
+	height:194px;
+	padding:5px;
+	display:inline-block;
+}
+.tutOption{
+	width:197px;
+	height:194px;
+	background: url(../images/tut-img.png);
+}
+.mhOption{
+	width:197px;
+	height:194px;
+	background: url(../images/mh-img.png);
+}
+#spawnOptionsContainer{
+	position: absolute;
+    left: 9%;
+    top: 41%;
+}
+.spawnOptionToolTip{
+    width: 197px;
+    background: rgba(0, 0, 0, 0.72);
+    position: absolute;
+    height: 20px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: white;
+    top: 86.5%;
+	font-size:10px;
+    text-align: center;
+	line-height: 20px;
+}
+.loadingDiv{
+	width: 72%;
+    height: 57%;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+    border-radius: 5px;
+}
+.steploading{
+    position: absolute;
+    width: 102px;
+    height: 67px;
+    top: 36%;
+    left: 38%;
+    line-height: 12em;
+    text-align: center;
+    background: url(../images/loading.gif);
+
+}

@@ -1,0 +1,228 @@
+#Pagecenter, #AtmMachine, #ActivityOverlay
+{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9000;
+}
+#ClientInfo, #custom{
+    position: absolute;
+    top: 80%;
+    left: 92%;
+    width: auto;
+    height: auto;
+    z-index: 9000;
+    /* background: rgba(0,0,0,0.5); */
+    padding: 5px;
+    border-radius: 5px;
+	opacity:0.3;
+}
+#nodestatus, #jqstatus, #uistatus{
+	display:inline-block;
+	margin:0px;
+}
+#custom{
+	top:30% !important;
+}
+#ActivityOverlay{
+	background:black;
+	width:100% !important;
+	height:100% !important;
+	z-index:8000 !important;
+	opacity:0.6;
+	display:none;
+	
+}
+#AtmMachine, #oAtmMachine{
+	width: 292px !important;
+	height: 254px !important;
+	background:url(//holorp.com/v2/images/AtmMachineBack.png);		
+	display:none;
+}
+#AtmSubmitBtn{
+	width: 62px !important;
+	height: 27px !important;
+	background:url(//sandbox.holorp.com/v2/images/AtmBtn.png);
+	position:relative;	
+	text-align:center;
+	line-height:28px;
+	font-family:arial;
+	font-size:10px;
+	cursor:pointer;
+	display:inline-block;
+	position:absolute;
+}
+.deposit_acc, .deposit_submit, .deposit_amount, .withdraw_acc, .withdraw_submit, .withdraw_amount{
+	position:absolute;
+}
+#AtmCloseBtn{
+	width: 59px !important;
+	height: 24px !important;
+	background:url(//holorp.com/v2/images/AtmCloseBtn.png);
+	position:relative;
+    top: 87%;
+    left: 41%;
+	cursor:pointer;
+}
+.AtmDepositScreen{
+	display:none;
+}
+.atmback{
+	cursor: pointer;
+	position: absolute;
+    top: 111%;
+    color: #333;
+    width: 53px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgba(0,0,0,0.3);
+    left: 72%;
+}
+.atmback:hover{
+	color:red;
+}
+.AtmWithdrawScreen{
+	display:none;
+}
+.AtmStaticMsg{
+	position: absolute;
+    top: -35%;
+    left: -23%;
+    font-family: arial;
+    color: #ca9546;
+    font-size: 10px;
+    padding: 3px;
+    border-radius: 3px;
+    text-shadow: 0px 1px 1px #a57938;
+}
+#AtmHomeScreen{
+	
+}
+#AtmInnerBody{
+    position: absolute;
+    top: 33%;
+    left: 22%;
+    display: inline-block;
+    height: 97px;
+    width: 202px;
+	color:black;
+	
+}
+#AtmInputBox{
+    padding: 6px;
+    border-radius: 3px;
+    width: 101px;
+    border: 1px solid black;
+    margin-top: 5px;
+	font-size: 11px;
+}
+.StatBar{
+	width: 112px;
+	height: 3px;
+	border-radius: 3px;
+	background: white;
+	padding: 2px;
+	margin-left: 0px !important;
+	margin:1px;
+	pointer-events:none !important;	
+}
+.HealthBar{
+	background-color: #E04747;
+	width:1px;
+}
+.EnergyBar{
+	background-color: #47E084;
+	width:1px;
+}
+.XPBar{
+	background-color: #528dc9;
+	width:5px;
+}
+.Character{
+	background:url( https://www.habbo.com/habbo-imaging/avatarimage?figure=&gesture=srp&head_direction=3&headonly=1);
+	width:54px;
+	height:62px;
+}
+.StatContainer{
+	z-index:8800;
+	position:absolute;
+	display:none;
+	cursor:pointer;
+	pointer-events:none !important;
+}
+.BoxBackground{
+	width: 112px !important;
+	background: #ffffff;
+    border-radius: 4px;
+}
+.BarContainer{
+	width:112px;
+	margin-left: -4px;
+}
+
+.jailtimer, .deadtimer, .worktimer{
+	position: absolute;
+    width: 140px;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    z-index: 15;
+    top: 20%;
+    left: 55%;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    box-shadow: 1px 1px 0px rgba(241, 229, 229, 0.61);
+    text-shadow: 0px 0px 1px #CA2020;
+    border: 1px solid rgba(144, 46, 46, 0.22);
+    margin: -100px 0 0 -150px;
+    background: rgba(255, 0, 0, 0.2);
+	display:none;
+	pointer-events:none !important;
+}
+.worktimer{
+    box-shadow: 1px 1px 0px #FFFCDE !Important;
+    text-shadow: 0px 0px 1px #C0CA20 !Important;
+    border: 1px solid rgba(46, 144, 85, 0.22) !Important;
+    background: rgba(255, 212, 0, 0.2) !Important;
+}
+.PageElement{
+	width:100%;
+	height:100%;
+	z-index:8000;
+	position:absolute;
+	pointer-events:none !important;
+}
+.LevelIndicator{
+	position: relative;
+    background: #528dc9;
+    height: 21px;
+    width: 21px;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 5000px;
+    left: 74.5%;
+    top: 33%;
+    box-shadow: 0px 0px 5px #fff;
+}
+#BContainer2{
+	position: relative;
+    left: 6%;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+#TargetIndicator{
+	left: -4%;
+}

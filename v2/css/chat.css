@@ -1,0 +1,814 @@
+﻿
+
+#benisgay{
+	
+}
+
+@font-face{
+	font-family: Ubuntu-Regular;
+	src: url('../font/chatfonts/ubuntu_regular.ttf');
+}
+
+::-webkit-scrollbar {
+    cursor:pointer !Important;
+}
+
+
+.chatBodyContainer::-webkit-scrollbar {
+	width: 11.1px;
+    height: 19px;
+}
+
+.chatBodyContainer::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px white;
+    background: white;
+    border-radius: 7px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 1px #453b3b;
+}
+
+.chatBodyContainer::-webkit-scrollbar-thumb {
+	background-color: #453b3b;
+    outline: 5px solid #453b3b;
+    height: 6px;
+    border: 1px solid white;
+    background-clip: padding-box;
+    border-radius: 7px;
+}
+
+.chatBodyContainer::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.chatBodyContainer::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.chatBox{
+	background:url('../images/chat/chatbox.png?2983829');
+	width:586px;
+	height:384px;
+	position:absolute;
+	font-size:11px;
+	left: 29%;
+    top: 20%;
+	border-radius:3px;
+	z-index:9999 !important;
+	display:none;
+	color:black;
+	box-shadow: rgba(64, 62, 62, 0.670588) 0px 0px 16px;
+}
+
+.chatinputBar {
+	background: url('../images/chat/textbar.png');
+	width: 570px;
+	height: 28px;
+	position: relative;
+	top: 90%;
+	color: #484848 !important;
+	left: 1.3%;
+}
+input{
+	outline: none !important;
+	color: #000000 !important;
+	font-size: 12.1px !important;
+	/* text-shadow: 1px 0px 1px rgba(0,0,0,0.2); */
+	font-family: Ubuntu-Regular !important;
+	word-spacing: -3px;
+}
+
+.chatElement{
+	border: none;
+    position: absolute;
+    top: 5%;
+    left: 1.2%;
+    /* background: red; */
+    width: 497px;
+    height: 21px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.chatInfo {
+    position: relative;
+    top: 89%;
+    left: 2%;
+	z-index:9000;
+    color: #fff!Important;
+    font-weight: bold;
+    cursor: default;
+    text-shadow: 1px 1px 0px #2f2f2f;
+    background-color: rgba(69, 63, 63, 0.64);
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+}
+.chatWelcome{
+	
+}
+.sendBtn{
+	background:url('../images/chat/chatbtn.png');
+	width:46px;
+	height:19px;
+	position:relative;
+	left: 91.3%;
+	top: 14%;
+	cursor:pointer;
+}
+
+.close{
+	background:url('../images/chat/close.png');
+	width:20px;
+	height:20px;
+	position:absolute;
+}
+
+.chatMinimize{
+	background: url('../images/chat/minimizebtn.png');
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 95%;
+	z-index:2;
+	top: 8%;
+	cursor:pointer;
+}
+.chatMinimize:hover{
+	opacity:0.7;
+}
+.chatAlert{
+	
+}
+
+.chatArrow, .OchatArrow{
+	background: url('../images/chat/chatarrow.png');
+    width: 5px;
+    height: 10px;
+    top: 39%;
+    left: 106.3%;
+    /* background: pink; */
+    position: absolute;
+}
+
+
+.chatMessageBox, .OchatMessageBox{
+	background: #fefefe;
+    border-top: 1px solid #ccc;
+    position: relative;
+    left: 10%;
+    top: 42%;
+    word-spacing: -0.3em;
+    font-size: 11.9px;
+    word-wrap: break-word;
+    padding-right: 2%;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    width: 475px;
+    padding-left: 2.5%;
+    line-height: 17px;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+    min-height: 19px;
+    font-family: Ubuntu-Regular !important;
+	cursor:default;
+}
+
+.chatMessageAppend{
+	background:white;
+	width:451px;
+}
+
+
+.chatMessagerFigure, .OchatMessagerFigure{
+	width: 54px;
+    height: 64px;
+    background: url(https://www.habbo.com/habbo-imaging/avatarimage?figure=cc-3509-110-96.hr-11….hd-180-1386.lg-3116-1189-1228&headonly=1&gesture=sml&direction=2&size=sml);
+    position: absolute;
+    left: -1%;
+    top:2%;
+}
+
+.chatMessagerName, .OchatMessagerName{
+	position: relative;
+    top: 12%;
+    left: 74%;
+    color: #716f6f !Important;
+    font-weight: bold;
+    position: absolute;
+    left: 123%;
+    top: 3%;
+    width: 200px;
+    font-size: 10px;
+    text-shadow: 1px 1px 0px #fff;
+	cursor:pointer;
+}
+.chatMessagerName:hover, .OchatMessagerName:hover{
+	opacity:0.6;
+}
+
+
+.chatMessageEntry, .OchatMessageEntry{
+	width: 547px;
+	height:inherit;
+	position: relative;
+	top: 0%;
+	margin-bottom:2%;
+}
+
+.chatMessageTimeAgo, .OchatMessageTimeAgo{
+    top: 100%;
+    position: absolute;
+    color: #696969 !important;
+    font-size: 11.9px;
+	word-spacing: -0.2em;
+	cursor:default;
+    left: 0%;
+    text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.74);
+}	
+@-moz-document url-prefix() {
+    .chatMessageTimeAgo, .OchatMessageTimeAgo {
+		position: relative !important;
+    }
+	.chatNotificationTxt {
+		width: 507px !important;
+		padding-left: 50px !important;
+		padding-top: 16px !important;
+		cursor: default !important;
+		position:initial !important;
+	}
+	.chatGreyNotification{margin: 21px 0px 0px 0px !important;}
+	.chatBodyContainer {
+		width: 579px !important;
+	}
+} 	
+.chatBodyContainer{
+	width: 571px;
+    max-height: 238px;
+    position: absolute;
+    /* background: pink; */
+    overflow-y: overlay;
+    top: 23%;
+    overflow-x: hidden;
+    left: 1%;
+}
+.chatTopContainer{
+	width: 584px;
+    position: absolute;
+    height: 85px;
+    left: 0.1%;
+    border-radius: 3px;
+}
+.chatNotification{
+	background:url(../images/chat/notificationbox.png);
+	width:550px;
+	height:50px;
+	word-spacing: -0.01em;
+    word-wrap: break-word;
+    padding-right: 2%;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.chatNotificationTxt{
+	width: 507px;
+    top: initial;
+    padding-left: 50px;
+    padding-top: 16px;
+    cursor: default;
+    position: relative;
+    line-height: 10px;
+}
+.chatNotification:hover{
+	opacity:0.7;
+}
+
+/* Opposition Chat Entry */
+.OchatMessageBox{
+    left: 0% !important;
+    width: 481px !important;
+}
+
+.OchatMessagerFigure{
+    background: url(https://www.habbo.com/habbo-imaging/avatarimage?figure=cc-3509-110-96.hr-11….hd-180-1386.lg-3116-1189-1228&headonly=1&gesture=sml&direction=1&head_direction=4&size=sml) !important;
+    left: 94% !important;
+    top: 2% !important;
+}
+.OchatMessagerName{
+	left: 34%!important;
+    color: #716f6f!important;
+    left: -942%!Important;
+    top: 1%!important;
+    position: relative !important;
+}
+.OchatArrow{
+	background: url('../images/chat/ochatarrow.png') !Important;
+    left: -10.7% !important;
+}
+
+.chatGreyNotification{
+	top: 100%;
+    position: relative;
+    color: #696969;
+    font-size: 10.5px;
+    word-spacing: 0.1em;
+    cursor: default;
+    /* left: 35%; */
+    text-align: center;
+    text-shadow: 1px 0px 0px rgba(255,255,255,0.74);
+    margin: 1px;
+}
+.chatSettings {
+	background: url('../images/chat/settingsbtn.png?55');
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 91%;
+    z-index: 2;
+	top: 8%;
+    cursor: pointer;
+}
+.chatSettings:hover {
+	opacity:0.7;
+}
+
+.chatSettingsBox{
+	display:none;
+	background:url(../images/chat/settingsBox.png);
+    width: 282px;
+    left: -49%;
+    height: 424px;
+    position: absolute;
+}
+.chatSettingsClose:hover{
+	opacity:0.6;
+}
+.chatSettingsClose{
+	background: url(../images/chat/closeBtn.png);
+    width: 20px;
+    left: 91.5%;
+    top: 5%;
+    height: 20px;
+    position: absolute;
+	cursor:pointer;
+}
+.chatSettingsBox > .topContainer{
+	position: relative;
+    top: 0%;
+    border-radius: 4px;
+    left: 0.3%;
+    width: 280.4px;
+    text-align: center;
+    /* background: rgba(255, 0, 0, 0.39); */
+    line-height: 80px;
+    height: 85px;
+    font-size: 14px;
+}
+.chatSettingsBox > .bottomContainer{
+	position: relative;
+    top: 0%;
+    border-radius: 4px;
+    left: 0.3%;
+    width: 280.4px;
+    /* text-align: center; */
+    /* line-height: 80px; */
+    height: 338px;
+    font-size: 18px;
+}
+.settingsItem{
+	position: relative;
+    width: 65px;
+    left: 4%;
+    margin: 3%;
+    top: 2%;
+    padding: 20px;
+    width: 203px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1px;
+    background: rgba(185, 185, 185, 0.3);
+    font-size: 9px
+	display: block;
+    height: 0px;
+    border-radius: 3px;
+}
+input[type=checkbox] + label
+{
+   background:url(../images/chat/radiobtnunchecked.png);
+   width: 19px;
+	height: 19px;
+	display: inline-block;
+	padding: 0 0 0 0px;
+	z-index: 900;
+	position: relative;
+	left: -262%;
+	top: 143%;
+}
+
+input[type=checkbox]:checked + label
+{
+   background:url(../images/chat/radiobtnchecked.png);
+   width:19px;
+   height:19px;
+   display:inline-block;
+   padding: 0 0 0 0px;
+   z-index:900;
+}
+	
+input[type=checkbox] {
+display:none;
+}
+
+.chatTabs{
+	position: absolute;
+    left: 1%;
+    top: 11%;
+}
+.chatHead{
+	/*position: absolute;
+    top: 5%;
+    left: 2%;*/
+    background: white;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #aeaeae;
+	cursor:pointer;
+    border-radius: 7px;
+    box-shadow: inset 2px 0px 25px rgba(0,0,0,0.1);
+}
+.chatHead.active{
+	box-shadow: inset 0px -2px 66px rgb(0, 0, 0) !important;
+}
+.chatImgHead{
+	width: 54px;
+    height: 62px;
+    position: relative;
+    left: 6%;
+    top: 2%;
+}
+.chatImgHead:hover{
+	box-shadow: 0px 1px 10px #98b9ec;;
+	border-radius:50000px;
+}
+.chatHeadClose{
+	background: url(../images/chat/miniclosebtn.png);
+    width: 7px;
+    height: 7px;
+	left: 83%;
+    top: 5%;
+    position: relative;
+}
+.topLayer{
+	z-index:99999 !important;
+}
+.availableChatsBox{
+	background:url('../images/chat/availablechatsbox.png?2983829');
+	width:526px;
+	height:383px;
+	position:absolute;
+	font-size:11px;
+	display:none;
+	z-index:9999;
+	border-radius:3px;
+	left: 29%;
+    top: 18%;
+}
+.aChatsBoxClose{
+	background: url('../images/chat/minimizebtn.png');
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 95%;
+    z-index: 2;
+    top: 0%;
+    cursor: pointer;
+}
+.atopContainer{
+	width: 516px;
+    height: 286px;
+    left: 1%;
+    top: 3%;
+    position: absolute;
+	overflow-y: overlay;
+	overflow-x: hidden;
+}
+.abottomContainer{
+	width: 516px;
+    height: 286px;
+    left: 1%;
+    top: 24%;
+    position: absolute;
+	overflow-y: overlay;
+	overflow-x: hidden;
+}
+.achatItem{
+	background: rgba(234, 233, 233, 0.54);
+    width: 498px;
+    border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+    text-align: left;
+    text-indent: 2%;
+    line-height: 30px;
+    position: relative;
+    cursor: pointer;
+    text-shadow: 0px 0px 4px rgb(115, 108, 108);
+    font-family: Ubuntu-Regular;
+    color: #fbfbfb;
+    font-size: 13.5px;
+    word-spacing: -0.2em;
+}
+.achatItem.available{
+	background: rgba(76, 226, 110, 0.54) !important;
+}
+.achatItem.password{
+	background: rgba(226, 209, 76, 0.54) !important;
+}
+.achatItem.locked{
+	background: rgba(146, 135, 135, 0.54) !important;
+}
+.achatItem.gang{
+	background: rgba(230, 49, 49, 0.54) !important;
+}
+
+.atoolTipContainer{
+	width:400px;
+}
+.atoolTip{
+	width: 146px;
+    height: 15px;
+    text-indent: 1%;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 2px;
+    cursor: default;
+    line-height: 15px;
+}
+.atoolTip.red{
+	background: rgba(230, 49, 49, 0.54) !important;
+}
+.atoolTip.yellow{
+	background: rgba(226, 209, 76, 0.54) !important;
+}
+.atoolTip.green{
+	background: rgba(76, 226, 110, 0.54) !important;
+}
+.atoolTip.gray{
+	background: rgba(146, 135, 135, 0.54) !important;
+}
+.achatItem:hover{
+	opacity:0.7;
+}
+
+
+.abottomContainer::-webkit-scrollbar {
+	width: 7.1px;
+    height: 19px;
+}
+
+.abottomContainer::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px white;
+    background: white;
+    border-radius: 7px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 1px #453b3b;
+}
+
+.abottomContainer::-webkit-scrollbar-thumb {
+	background-color: #453b3b;
+    outline: 5px solid #453b3b;
+    height: 6px;
+    border: 1px solid white;
+    background-clip: padding-box;
+    border-radius: 7px;
+}
+
+.abottomContainer::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.abottomContainer::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+.achatItemVisitors{
+	top: 26%;
+    position: relative;
+    left: -116%;
+    line-height: 28px;
+    text-indent: 10px;
+    color: white;
+    text-shadow: 0px 0px 1px #989898;
+    width: 69px;
+    height: 26px;
+    border-left: 1px solid rgba(204, 197, 197, 0.65);
+}
+
+.chatAlertBox{
+    position: absolute;
+    z-index: 9000;
+    font-family: Ubuntu-Regular;
+    color: black;
+    font-size: 10px;
+    word-spacing: -0.17em;
+    background: url('../images/chat/chatalertBox.png?999');
+    width: 265px;
+    left: 50%;
+    right: 0;
+    top: 4%;
+    bottom: 0;
+    margin-left: -13%;
+    height: 68px;
+}
+.chatAlertBoxContainer{
+	width: 212px;
+    position: relative;
+    height: 50px;
+    top: 7%;
+    /* background: red; */
+    left: 18%;
+    margin-top: 2%;
+}
+.chatAlertBoxClose{
+	background: url(../images/chat/miniclosebtn.png);
+    width: 7px;
+    height: 7px;
+    left: 94%;
+    top: 8%;
+    position: absolute;
+	cursor:pointer;
+}
+.chatAlertBoxClose:hover{
+	opacity:0.7;
+}
+.chatPasswordBox{
+	position: absolute;
+	left: 35%;
+    top: 4%;
+    font-family: Ubuntu-Regular;
+    color: black;
+    font-size: 10px;
+	z-index:9999999;
+    word-spacing: -0.17em;
+    background: url('../images/chat/chatpasswordBox.png?33');
+    width: 265px;
+    height: 69px;
+    /* text-indent: 5%; */
+}
+.chatPasswordInput{
+	position: absolute;
+    top: 44%;
+    left: 2%;
+    border-radius: 5px;
+    border: 1px solid #9e9a9a;
+    height: 20px;
+    padding: 5px;
+	text-align:center;
+    width: 243px;
+}
+.chatPasswordInputClose{
+	background: url(../images/chat/miniclosebtn.png);
+    width: 7px;
+    height: 7px;
+    left: 94%;
+    top: 8%;
+    position: absolute;
+	cursor:pointer;
+}
+.chatPasswordInputClose:hover{
+	opacity:0.7;
+}
+
+/*
+*
+*	Emoji Shit
+*
+*/
+
+.emojiNavigator{
+	position: absolute;
+    top: -20%;
+    left: 0%;
+    width: 212px;
+    height: 40px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 1px solid #666;
+}
+.emojiNavigatorItem{
+	 display: inline-block;
+    background: #ccc;
+	border-left:1px solid #696767;
+	width: 41px;
+    cursor: pointer;
+    text-align: center;
+    height: 40px;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.emojiNavigatorItemImg{
+	width: 20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    background-size: 20px 20px;
+    position: relative;
+    top: 25%;
+    left: 23%;
+}
+.emojiNavigatorItem:hover{
+	opacity:0.7;
+}
+.emojiNavigatorItem.active{
+	opacity:0.7;
+}
+.emojiBox{
+	width: 205px;
+    height: 200px;
+    background: #e2e2e2;
+    position: absolute;
+    left: 73%;
+    border-radius: 3px;
+    border: 1px solid #3c3c3c;
+    top: 20%;
+    padding: 3px;
+    z-index: 99999;
+    box-shadow: rgba(64, 62, 62, 0.670588) 0px 0px 16px;
+}
+.emojiContainer{
+    width: 167px;
+    height: 166px;
+    position: absolute;
+    left: 1%;
+    padding: 15px;
+    top: 1%;
+	overflow-y: auto;
+	overflow-x:hidden;
+	
+}
+.emoji{
+	width: 20px;
+    height: 20px;
+    background: url(./emojis/packs/basic/images/anger.png);
+    max-width: 20px;
+    max-height: 20px;
+    background-size: 20px 20px;
+    display: inline-block;
+    position: relative;
+	cursor:pointer;
+}
+#displayEmoji.emojiNavigatorItemImg{
+	width: 20px!important;
+    height: 20px!important;
+    display: inline-block;
+    max-width: 20px!important;
+    margin: 0px!important;
+    max-height: 20px!important;
+    background-size: 20px 20px!important;
+    position: relative!important;
+    top: 18%!important;
+    left: 7%!important;
+}
+.displayEmojiContainer{
+	display: inline-block;
+    position: relative;
+    height: 30px;
+}
+.emoji:hover{
+	opacity:0.7;
+}
+.emojiBtn{
+	background: url(../images/chat/emojiBtn.png);
+    width: 19px;
+    z-index: 3000;
+    position: relative;
+    height: 19px;
+    left: 87%;
+    top: 15%;
+    position: absolute;
+    cursor: pointer;
+}
+.emojiBtn:hover{
+	opacity:0.7;
+}
+.emojiBoxClose{
+	background: url(../images/chat/miniclosebtn.png);
+    width: 7px;
+    height: 7px;
+	z-index:999999;
+    left: 91%;
+    top: 5%;
+    position: absolute;
+    cursor: pointer;
+}
+.emojiBoxClose:hover{
+	opacity:0.7;
+}

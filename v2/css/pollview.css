@@ -1,0 +1,137 @@
+.polltypeb{
+	width:120px;						
+	height:80px;						
+	line-height:80px;						
+}
+.pollitem, .polltypeb, .pollreply{
+	color:black;
+	border-radius:3px;
+	text-align:center;
+	padding:3px;
+	background:white;
+	display:inline-block;
+	margin-right:3px;
+	border:1px solid black;
+	cursor:pointer;
+}
+.pollitem{
+	width:200px;						
+	height:20px;
+	line-height:20px;
+	border:1px solid #666 !important;
+	margin-bottom:3px;
+}
+.pollreply{
+		width: 420px;
+	height: auto;
+	margin: 2px;
+	line-height: 11px;
+	color: white;
+	background: rgb(33, 30, 29);
+	text-align: left;
+}
+.polluser{
+	width:420px;
+	height:30px;
+	padding:5px;
+	background: #4BB601;
+	color:white;
+	margin:2px;
+	border-radius:3px;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+.polltypeb:hover, .pollitem:hover{
+	opacity:0.6;
+}
+#polltypes{
+	margin-right:auto;
+	margin-left:auto;
+}
+.loadmore, .loadless, .pagecount{
+	background:#d64242;
+	border-radius:3px;
+	margin:2px;
+	padding:5px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	width:70px;
+	color:white;
+	font-size:10px;
+	display:inline;
+	cursor:pointer;
+}
+.loadless{
+	background:#4B42D6 !important;
+}
+.pagecount{
+	color:black;
+	background: white !Important;
+}
+.figure{
+	background: url(https://www.habbo.com/habbo-imaging/avatarimage?figure=&gesture=srp&head_direction=3&headonly=1);
+    width: 54px;
+    height: 64px;
+    display: inline-block;
+    margin-top: -19px;
+	margin-left:-15px;
+}
+.pollusertext{
+	display:inline-block;
+	height:50px;
+	font-size:11px !important;
+	width:291px;
+	text-align:left;
+	line-height:20px;
+}
+.savechanges{
+	background:#2ACC2F;;
+	color:white;
+	font-size:9px;
+	border-radius:3px;
+	padding:5px;
+	text-align:center;
+	width:90px;
+	height:20px;
+	line-height:20px;
+	cursor:pointer;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+}
+#successmsg{
+	color:green;
+	margin:3px;
+}
+.delete{
+	height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-left: 1px solid #E0CECE;
+    width: 77px;
+    margin-bottom: 31px;
+    background: #3E3A3A;
+    border-radius: 3px;
+    z-index: 555555;
+}
+.delete:hover{
+	opacity:0.5;
+	padding:2px;
+}
+.savechanges:hover{
+	opacity:0.7;
+	padding:6px;
+}
+.markicon{
+	display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: white;
+    border-radius: 3px;
+    margin-top: 0px;
+    position: relative;
+    top: 3px;
+	left: -8px;
+}
